@@ -1,0 +1,63 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    header, .biography {
+        height: 450px;
+    }
+
+    .latest-work {
+        height: 350px;
+    }
+
+    footer {
+        height: 500px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h3 {
+        font-size: calc(16px + 4.8 * ((100vw - 600px) / 600));
+    }
+
+    h2 {
+        font-size: calc(22px + 18 * ((100vw - 600px) / 600));
+    }
+
+    h1 {
+        font-size: calc(30px + 20 * ((100vw - 600px) / 600));
+    }
+
+    p {
+        font-size: calc(12px + 4 * ((100vw - 600px) / 600));
+    }
+
+    header, .biography {
+        height: calc(450px + 150 * ((100vw - 600px) / 600));
+    }
+
+    .latest-work {
+        height: calc(350px + 100 * ((100vw - 600px) / 600));
+    }
+
+    footer {
+        height: calc(500px + 100 * ((100vw - 600px) / 600));
+    }
+
+}
+
