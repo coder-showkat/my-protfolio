@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header, section, footer {
+    width: 100%;
+}
+
+header, .biography {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+header {
+    background-image: url(images/header-bg.png);
+}
+
+.half-side {
+  padding: 15px;
+  margin-left: 8%;  
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.highlighted-text {
+    color: rgb(255, 74, 146);
+}
+
+.link-button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(255, 74, 146);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.biography {
+    background-image: url(images/biography-bg.png);
+}
+
+.biography img {
+    scale: 1.4;
+}
+
+.latest-work {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(images/latest-work-bg.png);
+    background-size: cover;
+}
+
+.work-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.work {
+    width: 25%;
+    border-radius: 5px;
+}
+
+.work:hover {
+    box-shadow: 5px 5px 20px gray;
+}
+.work img {
+    width: 100%;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(images/footer-bg.png);
+    background-size: cover;
+    text-align: center;
+}
+
+footer h4 {
+    margin-bottom: 0px;
+}
+
+footer h5 {
+    margin-top: 6px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.message {
+    padding: 20px 60px;
+    background-color: rgb(255, 74, 146);
+    border-radius: 10px;
+    color: #fff;
+    width: 40%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.mail-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    header, .biography, footer {
+        height: 450px;
+    }
+
+    .latest-work {
+        height: 350px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h2 {
+        font-size: calc(22px + 18 * ((100vw - 600px) / 600));
+    }
+
+    h1 {
+        font-size: calc(30px + 20 * ((100vw - 600px) / 600));
+    }
+
+    p {
+        font-size: calc(12px + 4 * ((100vw - 600px) / 600));
+    }
+
+    header, .biography, footer {
+        height: calc(450px + 150 * ((100vw - 600px) / 600));
+    }
+
+    .latest-work {
+        height: calc(350px + 100 * ((100vw - 600px) / 600));
+    }
+
+}
+
